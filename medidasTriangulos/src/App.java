@@ -7,9 +7,7 @@ public class App {
         Scanner input = new Scanner(System.in);
         Locale.setDefault(Locale.US);
 
-        
-
-
+    
         input.close();
     }
 }
