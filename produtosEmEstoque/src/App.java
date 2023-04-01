@@ -22,7 +22,24 @@ public class App {
         produto.quantidade = input.nextInt();
         //Termino da leitura de dados do produto.
 
-        System.out.println(produto.nome + ", " + produto.preco + ", " + produto.quantidade);
+        System.out.println();
+        System.out.println("Dados do produto: " + produto);
+
+        System.out.println();
+        System.out.println("Entre com o numero de produtos para serem adicionados no estoque");
+        int quantidade = input.nextInt();
+        produto.adicionarProdutos(quantidade);
+
+        System.out.println();
+        System.out.println("Atualizar dados: " + produto);
+
+        System.out.println();
+        System.out.println("Entre com o numero de produtos para serem removidos do estoque");
+        quantidade = input.nextInt();
+        produto.removerProdutos(quantidade);
+
+        System.out.println();
+        System.out.println("Atualizar dados: " + produto);
 
         input.close();
     }
