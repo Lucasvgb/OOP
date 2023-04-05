@@ -10,7 +10,7 @@ public class App {
         Scanner input = new Scanner(System.in);
         
         Produto produto = new Produto();
-        System.out.println("Entre com o numero de produtos");
+        System.out.println("Entre com os dados dos produtos");
 
         System.out.println("Nome: ");
         produto.nome = input.nextLine();
@@ -23,18 +23,18 @@ public class App {
         //Termino da leitura de dados do produto.
 
         System.out.println();
-        System.out.println("Dados do produto: " + produto);
+        System.out.printf("Dados do produto: " + produto);
 
         System.out.println();
-        System.out.println("Entre com o numero de produtos para serem adicionados no estoque");
+        System.out.print("Entre com o numero de produtos para serem adicionados no estoque");
         int quantidade = input.nextInt();
         produto.adicionarProdutos(quantidade);
 
         System.out.println();
-        System.out.println("Atualizar dados: " + produto);
+        System.out.printf("Atualizar dados: " + produto);
 
         System.out.println();
-        System.out.println("Entre com o numero de produtos para serem removidos do estoque");
+        System.out.print("Entre com o numero de produtos para serem removidos do estoque");
         quantidade = input.nextInt();
         produto.removerProdutos(quantidade);
 
